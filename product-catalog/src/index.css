@@ -1,0 +1,157 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* GLOBAL */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* NAVBAR */
+nav {
+  background: linear-gradient(90deg, #4f46e5, #6366f1);
+  padding: 15px 30px;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+nav a.active {
+  background: white;
+  color: #4f46e5;
+}
+
+/* PAGE CONTAINER */
+.page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* HEADINGS */
+h1 {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+h2 {
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+/* HOME */
+.home {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.home p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* PRODUCTS GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.product-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #4f46e5;
+  font-weight: bold;
+}
+
+/* PRODUCT DETAILS */
+.product-details {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-details p {
+  margin: 10px 0;
+  font-size: 17px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 20px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+/* NOT FOUND */
+.not-found {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.not-found h1 {
+  font-size: 64px;
+  color: #ef4444;
+}
+
+.not-found p {
+  margin: 20px 0;
+  font-size: 18px;
+}
