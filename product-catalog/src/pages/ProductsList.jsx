@@ -1,19 +1,15 @@
-import { Link } from "react-router-dom";
 import products from "../data/products";
+import ProductCard from "../components/ProductCard";
 
 export default function ProductsList() {
+  if (products.length === 0) {
+    return <p>No products available.</p>;
+  }
+
   return (
     <div className="products-grid">
       {products.map((product) => (
-        <div className="product-card" key={product.id}>
-          <h3>{product.name}</h3>
-          <p>Price: ${product.price}</p>
-          <p>Category: {product.category}</p>
-
-          <Link to={`/products/${product.id}`}>
-            View Details →
-          </Link>
-        </div>
+        <ProductCard key={product.id} product={product} />
       ))}
     </div>
   );
